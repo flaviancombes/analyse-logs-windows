@@ -38,6 +38,8 @@ Chaque entrée de log ressemble à ceci :
 
 ##  Utilisation
 
+Ouverture du shell en tant qu'administrateur
+
 ### Extraction des logs
 
 
