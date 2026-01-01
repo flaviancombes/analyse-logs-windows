@@ -70,3 +70,11 @@ python analyse_logs.py auth2.log détaillé
 
 python analyse_logs.py auth2.log synthèse
 
+## Limites connues :
+
+- L’analyse se base uniquement sur les échecs de connexion Windows (**EventID 4625**) et ne prend pas en compte les connexions réussies ou les actions effectuées après une connexion.
+- L’outil analyse des fichiers de logs existants et ne fonctionne pas en temps réel.
+- La prise en charge des adresses **IPv6 est limitée** : le format IP/port peut entraîner une analyse moins précise pour les adresses IPv6 voir ne pas fonctionner.
+- Le score de gravité repose sur des règles simples (nombre de tentatives, comptes ciblés, type de connexion) et sert à aider à la priorisation, sans remplacer un outil SOC ou un SIEM complet.
+
+
